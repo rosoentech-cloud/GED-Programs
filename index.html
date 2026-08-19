@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 { color: #333; margin-bottom: 24px; font-size: 24px; }
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .doc-link {
+            display: block;
+            padding: 14px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .doc-link:hover { 
+            background-color: #0056b3; 
+            transform: translateY(-1px);
+        }
+        .doc-link:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Select a Document</h1>
+        <div class="links-container">
+            <!-- Formatted Google Drive Preview Links -->
+            <a href="https://google.com" target="_blank" class="doc-link">Open Document 1</a>
+            <a href="https://google.com" target="_blank" class="doc-link">Open Document 2</a>
+        </div>
+    </div>
+
+</body>
+</html>
